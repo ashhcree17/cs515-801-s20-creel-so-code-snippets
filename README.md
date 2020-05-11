@@ -1,2 +1,2 @@
 # cs515-801-s20-creel-so-code-snippets
-Used for data extraction, processing, and analysis of SOTorrent dataset
+Used for analysis of code snippets clones found in the SOTorrent dataset
