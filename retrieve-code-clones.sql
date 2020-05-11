@@ -1,4 +1,4 @@
-# Creates table: MostRecentPostBlockVersionNormalized
+-- Creates table: MostRecentPostBlockVersionNormalized
 SELECT
     pbv.Id as Id,
     PostBlockTypeId,
@@ -30,7 +30,7 @@ WHERE
     );
 
 
-# Creates table: MostRecentPostBlockVersionNormalizedClones
+-- Creates table: MostRecentPostBlockVersionNormalizedClones
 SELECT
     FARM_FINGERPRINT(ContentNormalized) AS ContentNormalizedHash,
     PostBlockTypeId,
@@ -43,7 +43,7 @@ GROUP BY
     ContentNormalized, PostBlockTypeId;
 
 
-# Creates table: MostRecentPostBlockVersionNormalizedClonesHash
+-- Creates table: MostRecentPostBlockVersionNormalizedClonesHash
 SELECT
     ContentNormalizedHash,
     PostBlockTypeId,
